@@ -1,13 +1,3 @@
-select * from yellow_taxi_data
-limit 10
-
-select * from zones
-where "Zone" = 'Central Park'
-limit 10
-
-select tip_amount, tpep_pickup_datetime::date from yellow_taxi_data
-limit 10
-
 --Question 3: Count records *
 --How many taxi trips were there on January 15?
 select count(*) from yellow_taxi_data where tpep_pickup_datetime::date = '2021-01-15'
